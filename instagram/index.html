@@ -1,49 +1,53 @@
-<!DOCTYPE html> 
-<html lang="pt-br"> 
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Instagram</title>
 </head>
 
-<body>
-    <div class="caixa-imagens">
-        <img src="img/celular.png" class="imagem-celular">
-        <img src="img/insta1.png" class="imagem-insta">
-        <img src="img/insta2.png" class="imagem-insta troca-imagem">
-    </div>
-    <div class="caixa-geral">
-
-        <div class="caixa-form">
-            <img src="img/insta-logo.png" class="insta-logo">
-
-            <input placeholder="Telefone, nome de usuário ou email">
-            <input placeholder="Senha" type="password">
-
-            <button>Entrar</button>
-
-            <a class="login-facebook">Entrar com Facebook</a>
-
-            <a class="esqueceu-senha">Esqueceu a senha ?</a>
+<body class="bg-gray-100 w-screen h-screen flex justify-center items-center font-sans">
+    <div class="flex gap-10">
+        <div class="caixa-imagens relative">
+            <img src="img/celular.png" class="imagem-celular w-[450px]">
+            <img src="img/insta1.png" class="imagem-insta h-[520px] absolute left-[153px] top-[26px] transition-opacity duration-2000">
+            <img src="img/insta2.png" class="imagem-insta troca-imagem h-[520px] absolute left-[153px] top-[26px] transition-opacity duration-2000 hidden">
         </div>
 
-        <div class="caixa-cadastro">
-            <p class="paragrafo-cadastro">Não tem uma conta?</p> <a class="link-cadastro">Cadastre-se</a>
+        <div class="flex flex-col items-center">
+            <div class="caixa-form w-[350px] border border-gray-300 bg-white p-10 flex flex-col items-center">
+                <img src="img/insta-logo.png" class="insta-logo mb-5">
+
+                <input placeholder="Telefone, nome de usuário ou email" 
+                       class="w-full h-10 mb-3 border border-gray-300 rounded px-3 text-gray-800 outline-none">
+                <input placeholder="Senha" type="password" 
+                       class="w-full h-10 mb-3 border border-gray-300 rounded px-3 text-gray-800 outline-none">
+
+                <button class="w-full h-8 bg-blue-500 text-white rounded mt-5 font-bold hover:bg-blue-600">
+                    Entrar
+                </button>
+
+                <a href="#" class="login-facebook text-blue-600 font-bold text-sm mt-5">Entrar com Facebook</a>
+
+                <a href="#" class="esqueceu-senha text-blue-600 text-xs mt-3">Esqueceu a senha?</a>
+            </div>
+
+            <div class="caixa-cadastro flex justify-center items-center w-[350px] mt-5 py-4 border border-gray-300 bg-white">
+                <p class="paragrafo-cadastro text-sm">Não tem uma conta?</p>
+                <a href="#" class="link-cadastro text-blue-500 font-bold text-sm ml-1">Cadastre-se</a>
+            </div>
+
+            <p class="paragrafo-app text-sm text-center mt-5">Obtenha o aplicativo</p>
+
+            <div class="caixa-app flex justify-center gap-3 mt-3">
+                <img src="img/ios.png" class="logo-app w-[150px]">
+                <img src="img/google.png" class="logo-app w-[150px]">
+            </div>
         </div>
-
-        <p class="paragrafo-app">Obtenha o aplicativo</p>
-
-        <div class="caixa-app">
-            <img src="img/ios.png" class="logo-app">
-            <img src="img/google.png" class="logo-app">
-        </div>
-
     </div>
 </body>
 
-<script src="scripts.js">
-
-</script>
+<script src="scripts.js"></script>
 
 </html>
