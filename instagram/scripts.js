@@ -1,18 +1,16 @@
-let imagem = document.querySelector(".troca-imagem")
+let imagens = document.querySelectorAll(".troca-imagem");
+let indexAtual = 0;
 
-function trocaImagem(){
+function trocaImagem() {
+  imagens[indexAtual].classList.add("hidden");
 
-  if(imagem.style.opacity == 0){
-    imagem.style.opacity = 1
-  } 
-  
-  else {
-    imagem.style.opacity = 0
-  }
+  indexAtual = (indexAtual + 1) % imagens.length;
 
+  imagens[indexAtual].classList.remove("hidden");
 }
 
-setInterval(trocaImagem, 3000)
+setInterval(trocaImagem, 2000);
+
 
 
 
