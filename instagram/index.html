@@ -8,15 +8,18 @@
 </head>
 
 <body class="bg-gray-100 w-screen h-screen flex justify-center items-center font-sans">
-    <div class="flex gap-10">
-        <div class="caixa-imagens relative">
-            <img src="img/celular.png" class="imagem-celular w-[450px]">
-            <img src="img/insta1.png" class="imagem-insta h-[520px] absolute left-[153px] top-[26px] transition-opacity duration-2000">
-            <img src="img/insta2.png" class="imagem-insta troca-imagem h-[520px] absolute left-[153px] top-[26px] transition-opacity duration-2000 hidden">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+        <div class="caixa-imagens relative flex justify-center">
+            <img src="img/celular.png" class="imagem-celular w-[300px] md:w-[450px]">
+            <img src="img/insta1.png" class="imagem-insta h-[320px] md:h-[520px] absolute left-[90px] md:left-[153px] top-[26px] transition-opacity duration-2000">
+            <img src="img/insta2.png" class="imagem-insta troca-imagem h-[320px] md:h-[520px] absolute left-[90px] md:left-[153px] top-[26px] transition-opacity duration-2000 hidden">
         </div>
 
         <div class="flex flex-col items-center">
-            <div class="caixa-form w-[350px] border border-gray-300 bg-white p-10 flex flex-col items-center">
+
+            <div class="caixa-form w-[300px] md:w-[350px] border border-gray-300 bg-white p-6 md:p-10 flex flex-col items-center">
                 <img src="img/insta-logo.png" class="insta-logo mb-5">
 
                 <input placeholder="Telefone, nome de usuário ou email" 
@@ -33,16 +36,15 @@
                 <a href="#" class="esqueceu-senha text-blue-600 text-xs mt-3">Esqueceu a senha?</a>
             </div>
 
-            <div class="caixa-cadastro flex justify-center items-center w-[350px] mt-5 py-4 border border-gray-300 bg-white">
+            <div class="caixa-cadastro flex justify-center items-center w-[300px] md:w-[350px] mt-5 py-4 border border-gray-300 bg-white">
                 <p class="paragrafo-cadastro text-sm">Não tem uma conta?</p>
                 <a href="#" class="link-cadastro text-blue-500 font-bold text-sm ml-1">Cadastre-se</a>
             </div>
 
             <p class="paragrafo-app text-sm text-center mt-5">Obtenha o aplicativo</p>
-
             <div class="caixa-app flex justify-center gap-3 mt-3">
-                <img src="img/ios.png" class="logo-app w-[150px]">
-                <img src="img/google.png" class="logo-app w-[150px]">
+                <img src="img/ios.png" class="logo-app w-[120px] md:w-[150px]">
+                <img src="img/google.png" class="logo-app w-[120px] md:w-[150px]">
             </div>
         </div>
     </div>
